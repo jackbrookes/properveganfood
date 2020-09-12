@@ -7,29 +7,44 @@ html {
     overflow-y: scroll;
     height: 100%;
     width: 100%;
-} 
-
-body {
-    font-family: 'Roboto', sans-serif;
-    color: #413e3e;
-    font-size: 18px;
-    background-color: #dad6d2;
-    margin: 0;
-    min-width: 400px;
 }
 
-h1 {
-    color: #ffa1ef;
-    font-family: 'Playfair Display', serif;
-    font-size: 42px;
-    padding: 90px 0 50px 0;
+body {
+    font-family: 'Old Standard TT', Times, serif;
+    color: #252a30;
+    font-size: 19px;
+    background-color: #f3ebd1;
     margin: 0;
+    min-width: 360px;
+}
+
+img#logo {
+    display: block;
+    padding: 10px 0 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 200px;
+    transition: 0.4s;
+}
+
+h2.separator {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: 'Alata', sans-serif;
+    color: #3d444e;
     text-align: center;
 }
 
-h2, h3, h4, h6 {
-    color: #524f4f;
-    font-family: 'Playfair Display', serif;
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    color: #3d444e;
+    font-weight: 400;
+    font-family: 'Alata', sans-serif;
 }
 
 em {
@@ -46,30 +61,91 @@ strong {
     position: relative;
 }
 
+h2.separator {
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 80px;
+}
+
+h2.separator::before,
+h2.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #40464e;
+}
+
+h2.separator::before {
+    margin-right: .5em;
+}
+
+h2.separator::after {
+    margin-left: .5em;
+}
+
 .section {
     width: 100%;
 }
 
-.dark-blue-bg {
-    background-color: #213a80;
+ul.ingredients {
+    list-style: none;
+    /* Remove default bullets */
 }
 
-.white-bg {
-    background-color: #f0efe9;
+ul.ingredients li::before {
+    content: "\2022";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #b78846;
+    /* Change the color */
+    font-weight: bold;
+    /* If you want it to be bold */
+    display: inline-block;
+    /* Needed to add space between the bullet and the text */
+    width: 1em;
+    /* Also needed for space (tweak if needed) */
+    margin-left: -1em;
+    /* Also needed for space (tweak if needed) */
+}
+
+#nav {
+    overflow: hidden;
+    background-color: #ebdfb7;
+    border-bottom: 5px solid #878c64;
+    padding: 20px 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    transition: 0.4s;
+}
+
+#footer {
+    text-align: center;
+    font-size: 12px;
+    color: #878c64;
+    border-top: 1px solid #40464e;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+a.underline:link {
+    text-decoration: underline;
 }
 
 .inner-body {
     position: relative;
     margin: 0 auto 0 auto;
-    padding: 0 3em 0 3em;
-    max-width: 800px;
+    padding: 0 1em 0 1em;
+    max-width: 1000px;
 }
 
-a.title {
+a {
+    color: inherit;
     text-decoration: none;
 }
 
-a.title:active {
+ul.recipes a.title:active {
     color: #dad6d2;
 }
 
@@ -100,9 +176,107 @@ ul.recipes a li {
 
 ul.recipes a {
     text-decoration: none;
-    color: #213a80;
-    font-size: 20px;
-    font-family: 'Playfair Display', serif;
+}
+
+img.recipe-thumb {
+    height: 120px;
+    width: 120px;
+    vertical-align: middle;
+}
+
+.container {
+    border: 1px solid #40464e;
+    padding: 20px;
+    display: flex;
+}
+
+img.container-image {
+    margin: 0 20px 0 0;
+    width: 30%;
+    object-fit: contain;
+    align-self: flex-start;
+}
+
+.container-text {
+    flex: 1 1 auto;
+    width: 70%;
+}
+
+p.container-text-description {
     font-style: italic;
-    font-weight: 700;
+}
+
+img.main-image {
+    max-width: 100%;
+}
+
+.box-inner {
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    margin: 60px 5px;
+    border: 2px solid #b78846;
+}
+
+.box-inner::before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 1px solid #b78846;
+}
+
+.box-inner::after {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border: 1px solid #b78846;
+}
+
+p.main-text-description {
+    font-size: 20px;
+    font-style: italic;
+    max-width: 500px;
+    position: relative;
+    margin: 30px auto;
+}
+
+.pull-up {
+    margin-top: -67px;
+    margin-bottom: 30px;
+}
+
+h2.recipe-header {
+    display: inline-block;
+    position: relative;
+    background-color: #f3ebd1;
+    padding: 0 20px;
+}
+
+img.us {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-cropper {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+img.profile-pic {
+    display: inline;
+    margin: 0 auto;
 }
