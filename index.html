@@ -1,71 +1,60 @@
-<!DOCTYPE html>
-<html>
-<title>Proper Vegan Food</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
-<style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Karma", sans-serif
-    }
-    
-    .w3-bar-block .w3-bar-item {
-        padding: 20px
-    }
-</style>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/recipes/static/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700;700i&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="/recipes/static/favicon.png"/>
+    <title>Vegan Recipes</title>
+</head>
 
 <body>
-
-    <!-- Top menu -->
-    <div class="w3-top">
-        <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
-            <div class="w3-center w3-padding-16">Proper Vegan Food</div>
-            <hr>
-        </div>
-    </div>
-
-    <!-- !PAGE CONTENT! -->
-    <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
-
-        <!-- About Section -->
-        <div class="w3-container w3-padding-32 w3-center">
-            <h3>About Us</h3><br>
-            <img src="https://via.placeholder.com/400" alt="Image of Proper Vegan Food" class="w3-image" style="display:block;margin:auto" width="800" height="533">
-            <div class="w3-padding-32">
-                <p>Info...</p>
-                <p>Get in touch...</p>
+    <div id="main">
+        <div class="section dark-blue-bg">
+            <div class="inner-body">
+                <a class="title" href="/recipes/"><h1>Vegan recipes</h1></a>
             </div>
         </div>
-        <hr>
+        <div class="section">
+            <div class="inner-body white-bg">
+                <div id="content">
+                    
 
-        <!-- LightWidget WIDGET -->
-        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js">
-        </script>
-        <iframe src="//lightwidget.com/widgets/b7a039b1fa00565c8bb46cfd3889a335.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;">
-        </iframe>
-        <hr>
+<h2>
+    Welcome
+</h2>
 
-        <!-- End page content -->
+<p>
+    Welcome to the recipes website.
+</p>
+
+
+<ul class="recipes">
+    
+        <a href="/recipes/0/">
+            <li>
+                Spanish Sausage Stew
+            </li>
+        </a>
+        <div class="spacer">&nbsp;</div>
+    
+        <a href="/recipes/1/">
+            <li>
+                Tofu Tikka Masala
+            </li>
+        </a>
+        <div class="spacer">&nbsp;</div>
+    
+</ul>
+
+
+
+                </div>
+            </div>
+        </div>
     </div>
-
-    <script>
-        // Script to open and close sidebar
-        function w3_open() {
-            document.getElementById("mySidebar").style.display = "block";
-        }
-
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-        }
-    </script>
-
 </body>
 
 </html>

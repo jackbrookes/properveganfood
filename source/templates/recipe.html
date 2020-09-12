@@ -1,0 +1,25 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="box">
+    <div class="box-inner">
+        <div class="pull-up">
+            <h2 class="recipe-header">
+                {{ recipe.title }}
+            </h2>
+        </div>
+
+        <img class="main-image" src="{{ url_for('static', filename='images/' + recipe.main_image) | resize_width(600) }}">
+        <p class="main-text-description">{{ recipe.description }}</p>
+    </div>
+</div>
+
+
+<h3>Ingredients</h3>
+<ul class="ingredients">
+    {% for ingredient in recipe.ingredients %}
+    <li>{{ ingredient }}</li>
+    {% endfor %}
+</ul>
+
+<h3>Method</h3>
+{{ recipe.html|safe }} {% endblock %}

@@ -1,0 +1,49 @@
+{
+    "recipes": [{
+            "name": "Spanish Sausage Stew",
+            "ingredients": [
+                "4 vegan sausages (e.g. Linda McCartney), defrosted",
+                "1 large onion or leek",
+                "1 red pepper",
+                "2 sweet potato or carrot",
+                "Handful cabbage, spinach, or kale",
+                "1 tin chopped tomato",
+                "Veg stock or water",
+                "1 tablespoon smoked paprika",
+                "1 teaspoon dried mixed herbs"
+            ],
+            "method": [
+                "Slice sausages into bite size pieces and lightly fry in oil until browning.",
+                "Add onion or leek to pan with pinch of salt and cook until softened.",
+                "Add red pepper, cook until onions or leeks have browned",
+                "Add sweet potato or carrot, paprika and herbs. Stir and add tomatoes.",
+                "Top up with water or veg stock, and allow to simmer until veg is softened.",
+                "Taste and add salt, pepper and lemon juice to taste. Add greens and simmer for a further few minutes.",
+                "Serve with bread."
+            ]
+        },
+        {
+            "name": "Tofu Tikka Masala",
+            "ingredients": [
+                "1 block extra firm tofu, pressed and cubed",
+                "2 peppers (red, yellow, orange)",
+                "1 tomato, halved",
+                "1 medium onion, diced",
+                "3 heaped tsp tomato puree",
+                "1 can coconut milk/cream",
+                "Curry powder (parts: 1 cumin, 1 ground coriander, 1 turmeric, 1 paprika, 0.25 hot chilli powder, 0.25 fennel, 0.25 cinnamon, 0.25 cardamom, 0.25 black pepper)",
+                "Garlic and ginger paste",
+                "Bunch fresh coriander"
+            ],
+            "method": [
+                "Coat tofu in oil and curry powder, place on baking tray.",
+                "Hack up peppers and place on baking tray, with tofu and tomato. Allow to roast.",
+                "When tofu is nearly golden and vegetables are nearly cooked, fry onion in oil for at least 10 minutes with salt.",
+                "Add garlic and ginger paste, coriander stalks, and 2 heaped tablespoons of curry powder. Cook for a few minutes.",
+                "Add onion-spice mixture to a blender along with roasted vegetables, tomato puree and stock to loosen. Blend until smooth",
+                "Return to pan, simmer and add the cream of the coconut milk. Add the coconut water or more stock until smooth and creamy.",
+                "Stir in tofu and fresh chopped coriander. Season with salt, a pinch of sugar and lemon/lime juice to taste. Serve with pilau rice and naan."
+            ]
+        }
+    ]
+}

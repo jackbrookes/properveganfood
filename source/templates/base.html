@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='logo_med.png') }}" />
+    <title>{% if title %}{{ title }} - {% endif %}Proper Vegan Food: Recipes & Meal Inspiration</title>
+</head>
+
+<body>
+    <div id="main">
+        <div class="section" id="nav">
+            <div class="inner-body">
+                <a class="title" href="{{ url_for('index') }}">
+                    <img id="logo" src="{{ url_for('static', filename='logo_med.png') }}"" />
+                </a>
+            </div>
+        </div>
+        <div class="section" style="margin-top:220px;">
+            <div class="inner-body">
+                <div id="content">
+                    {% block content %} {% endblock %}
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="inner-body">
+                <div id="footer">
+                    <p>
+                        &#169 Proper Vegan Food 2020.
+                    </p>
+                    <p>
+                        Follow us on <a class="underline" href="https://www.instagram.com/properveganfood/">Instagram</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 80) {
+                document.getElementById("nav").style.padding = "5px 10px";
+                document.getElementById("nav").style.borderBottomWidth = "2.5px";
+                document.getElementById("logo").style.height = "100px";
+            } else {
+                document.getElementById("nav").style.padding = "20px 10px";
+                document.getElementById("nav").style.borderBottomWidth = "5px";
+                document.getElementById("logo").style.height = "200px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+{% if recipes %}
+
+<h2 class="separator">
+    Recipes
+</h2>
+
+<ul class="recipes">
+    {% for recipe in recipes %}
+    <a href="{{ url_for('page', path=recipe.path) }}">
+        <div class="container">
+            <img class="container-image" src="{{ url_for('static', filename='images/' + recipe.main_image) | resize(200, 200) }}" />
+            <div class="container-text">
+                <h3>{{ recipe.title }}</h3>
+                <p class="container-text-description">{{ recipe.description }}</p>
+            </div>
+        </div>
+    </a>
+
+    {% endfor %}
+</ul>
+{% else %}
+<p>No recipes!</p>
+{% endif %}
